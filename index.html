@@ -1,0 +1,170 @@
+
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-Frame-Options" content="DENY">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Centinela Continuity Enterprise | CLR Business Consulting</title>
+        <style>
+            :root { --primary: #002B5B; --secondary: #0097B2; --action: #27ae60; --text-dark: #1a2a3a; }
+            body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: var(--text-dark); margin: 0; background: #ffffff; }
+            
+            header { background: var(--primary); color: white; padding: 1.5rem; text-align: center; border-bottom: 4px solid var(--secondary); }
+            header img { height: 70px; }
+
+            .container { width: 90%; max-width: 1000px; margin: auto; }
+            
+            .hero { text-align: center; padding: 3rem 1rem; }
+            .hero h1 { color: var(--primary); font-size: 2.6rem; margin: 0; text-transform: uppercase; line-height: 1.1; }
+            .hero .subtitle { font-size: 1.4rem; color: var(--secondary); font-weight: bold; display: block; margin-top: 10px; }
+            .ransomware-def { font-size: 1.1rem; color: #555; margin: 1rem 0; display: block; }
+
+            .solution-highlight { 
+                background: var(--secondary); color: white; padding: 1.5rem; border-radius: 8px; 
+                font-size: 1.5rem; font-weight: 800; margin: 2rem 0; border-left: 8px solid var(--primary);
+            }
+            .solution-sub { font-size: 1.1rem; font-weight: normal; display: block; margin-top: 5px; opacity: 0.9; }
+
+            .lead-form-container { background: #f4f7f6; padding: 2rem; border-radius: 8px; border: 1px solid #ddd; max-width: 600px; margin: 0 auto; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+            .lead-form-container h3 { margin-top: 0; color: var(--primary); font-size: 1.3rem; }
+            .form-group { margin-bottom: 1rem; text-align: left; }
+            .form-group label { display: block; font-weight: bold; margin-bottom: 0.5rem; font-size: 0.9rem; }
+            .form-group input[type="text"], .form-group input[type="email"], .form-group input[type="tel"] { width: 100%; padding: 0.8rem; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+            
+            /* ESTILOS PARA CHECKBOX LEGAL */
+            .legal-check-group { display: flex; align-items: flex-start; gap: 10px; margin: 1.5rem 0; text-align: left; }
+            .legal-check-group input[type="checkbox"] { margin-top: 4px; transform: scale(1.2); cursor: pointer; }
+            .legal-check-group label { font-size: 0.85rem; font-weight: normal; color: #555; line-height: 1.4; }
+            .legal-check-group a { color: var(--secondary); text-decoration: underline; font-weight: bold; }
+
+            .btn-cta { 
+                width: 100%; background: var(--action); color: white; padding: 1rem; border: none; 
+                border-radius: 4px; font-weight: bold; font-size: 1.2rem; cursor: pointer; transition: 0.3s; 
+            }
+            .btn-cta:hover { background: #219150; }
+
+            .diagnostic-section { background: var(--primary); color: white; padding: 3rem 1rem; margin: 3rem auto; border-radius: 8px; }
+            .diagnostic-section h2 { text-align: center; color: var(--secondary); margin-top: 0; }
+            .checklist { max-width: 700px; margin: auto; text-align: center; font-size: 1.1rem; padding: 0; }
+            .checklist li { margin-bottom: 1rem; list-style: none; position: relative; }
+            .checklist li::before { content: '⚠️ '; }
+            .diagnostic-warning { text-align: center; font-weight: bold; margin-top: 2rem; color: #ffcccc; }
+
+            .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin: 3rem 0; }
+            .card { padding: 1.5rem; border-radius: 8px; border: 1px solid #eee; text-align: center; background: #fafafa; }
+            .card h3 { color: var(--primary); font-size: 1.3rem; }
+
+            .price-table { width: 100%; border-collapse: collapse; background: white; margin-bottom: 3rem; }
+            .price-table th, .price-table td { padding: 1rem; border: 1px solid #ddd; text-align: center; }
+            .price-table th { background: var(--primary); color: white; }
+
+            footer { background: var(--primary); color: white; text-align: center; padding: 2rem; border-top: 4px solid var(--secondary); }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="logo_centinela.png" alt="Logo Centinela">
+        </header>
+
+        <section class="hero container">
+            <h1>CENTINELA CONTINUITY ENTERPRISE</h1>
+            <span class="subtitle">v11.0 - Resiliencia Operativa B2B</span>
+            
+            <p class="ransomware-def">Tu respaldo actual no detiene el secuestro de datos (Ransomware). Centinela v11.0 es tu defensa absoluta.</p>
+
+            <div class="solution-highlight">
+                RECUPERA TU OPERACIÓN EN SEGUNDOS TRAS UN ATAQUE.
+                <span class="solution-sub">Sin pagar rescates, sin depender de internet y sin cuotas mensuales.</span>
+            </div>
+
+            <div class="lead-form-container" id="trial-form">
+                <h3>Recibe la Prueba Gratuita (Trial 100MB) en tu Correo</h3>
+                <form action="https://formspree.io/f/https://formspree.io/f/xojpqwyo" method="POST">
+                    <div class="form-group">
+                        <label>Nombre y Apellido</label>
+                        <input type="text" name="nombre" required placeholder="Ej. Carlos Mendoza">
+                    </div>
+                    <div class="form-group">
+                        <label>Teléfono Celular</label>
+                        <input type="tel" name="celular" required placeholder="Ej. 55 1234 5678">
+                    </div>
+                    <div class="form-group">
+                        <label>Correo Corporativo</label>
+                        <input type="email" name="correo" required placeholder="carlos@tuempresa.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Empresa</label>
+                        <input type="text" name="empresa" required placeholder="Nombre de la empresa">
+                    </div>
+                    
+                    <div class="legal-check-group">
+                        <input type="checkbox" id="consentimiento" name="consentimiento_legal" required>
+                        <label for="consentimiento">
+                            He leído y acepto el <a href="Aviso_Privacidad_Web.pdf" target="_blank">Aviso de Privacidad</a> y el <a href="EULA_Trial.pdf" target="_blank">Acuerdo de Licencia Trial</a>. Autorizo a CLR Business Consulting el tratamiento de mis datos y el envío del binario a mi correo corporativo.
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-cta">Enviar Enlace de Descarga</button>
+                    <p style="font-size: 0.8rem; color: #666; margin-top: 10px; text-align: center;">Tus datos están protegidos. No enviamos SPAM.</p>
+                </form>
+            </div>
+        </section>
+
+        <section class="diagnostic-section container">
+            <h2>Diagnóstico Zero-Trust: ¿Sobrevivirías a un ataque hoy?</h2>
+            <ul class="checklist">
+                <li>Si tu computadora es atacada ahora mismo, ¿tienes una copia física desconectada de internet lista para usar?</li>
+                <li>¿Tu sistema de respaldo actual es capaz de detectar y detener un cifrado malicioso en tiempo real?</li>
+                <li>¿Estás seguro de que tu proveedor de nube (Google Drive, OneDrive) NO sincronizará los archivos infectados?</li>
+                <li>¿Puedes recuperar toda la información operativa de tu empresa en menos de 15 minutos sin descargar gigabytes de internet?</li>
+                <li>¿Eres el único que posee la llave de cifrado de tus respaldos (Zero-Knowledge)?</li>
+            </ul>
+            <p class="diagnostic-warning">Si respondiste "No" a 2 o más preguntas, tu empresa está en riesgo crítico. Descarga el Trial hoy.</p>
+        </section>
+
+        <section class="container">
+            <h2 style="text-align:center; color: var(--primary);">¿Por qué Centinela es diferente?</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Protección Anti-Lock</h3>
+                    <p>Detectamos el intento de cifrado criminal y blindamos tus archivos en tiempo real.</p>
+                </div>
+                <div class="card">
+                    <h3>Bóveda Dual Local</h3>
+                    <p>Espejo de trabajo + Bóveda AES-256. Recuperación total sin necesidad de conexión externa.</p>
+                </div>
+                <div class="card">
+                    <h3>Privacidad Zero-Knowledge</h3>
+                    <p>Solo tú posees las llaves de acceso. Soberanía total de datos para tu empresa.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" id="precios">
+            <h2 style="text-align:center; color: var(--primary);">Inversión de Licencia Perpetua (Pago Único)</h2>
+            <table class="price-table">
+                <thead>
+                    <tr>
+                        <th>Nivel</th>
+                        <th>Uso Sugerido</th>
+                        <th>Inversión</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Trial PoC</td><td>Validación Técnica</td><td><b>$0 (Gratis)</b></td></tr>
+                    <tr><td>Essential</td><td>Micro-Empresa / Home Office</td><td>$2,490 MXP + IVA</td></tr>
+                    <tr><td>Vault</td><td>Mid-Market / Activos Críticos</td><td>$3,490 MXP + IVA</td></tr>
+                    <tr><td><b>Enterprise + DLP</b></td><td><b>Corporativo y Control Total</b></td><td><b>$4,990 MXP + IVA</b></td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Centinela Continuity Enterprise. Todos los derechos reservados.</p>
+            <p>Implementación Estratégica: <b>CLR Business Consulting</b></p>
+            <p style="font-size: 0.85rem; opacity: 0.7;">Socio Tecnológico Senior en Continuidad de Negocio.</p>
+        </footer>
+    </body>
+    </html>
+    
